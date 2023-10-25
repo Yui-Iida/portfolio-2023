@@ -16,24 +16,38 @@
     <!-- <div
       class="h-full font-poppins font-light bg-gradient-to-r from-fuchsia-200 from-10% via-violet-200 via-30% to-blue-200 to-90%"
     > -->
-    <div class="h-full font-poppins font-light bg-gray-200 dark:bg-slate-800">
+    <div class="h-full font-poppins font-light bg-gray-200 dark:bg-zinc-900">
       <div class="py-6 px-12 md:py-12 md:px-20 lg:px-32">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
           <!-- Box 1 -->
           <div
-            class="link-container relative bg-white rounded-xl order-4 col-span-1 row-span-1 md:order-1 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden"
+            class="link-container relative bg-white rounded-xl order-4 col-span-1 row-span-1 md:order-1 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <img
               src="./img/work1.jpg"
               alt="my work 01 pikachu chatbot"
               id="linkImage"
-              class="duration-500"
+              class="duration-500 dark:hidden"
+            />
+            <img
+              src="./img/work1-dark.jpg"
+              alt="my work 01 pikachu chatbot"
+              id="linkImage"
+              class="duration-500 hidden dark:block"
             />
             <div
               class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
               id="linkTitle"
             >
               <p>Pikachu Chatbot</p>
+            </div>
+            <div
+              class="hidden absolute bg-white py-2 px-2 rounded-3xl"
+              id="linkIcons"
+            >
+              <i
+                class="fa-brands fa-react text-black text-xl sm:text-3xl lg:text-5xl"
+              ></i>
             </div>
             <div
               class="hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 md:mb-6 flex items-center gap-2"
@@ -45,7 +59,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black text-lg lg:text-2xl hover:text-green-400 duration-300 hover:text-green-400 duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white text-lg dark:hover:text-green-400 lg:text-2xl duration-300 hover:text-green-400 duration-300"
                 ></i>
               </a>
               <a
@@ -54,7 +68,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black text-xl lg:text-3xl hover:text-green-400 duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
                 ></i>
               </a>
             </div>
@@ -69,22 +83,34 @@
 
           <!-- Box 3 -->
           <div
-            class="bg-violet-500 p-6 md:p-16 rounded-xl order-5 col-span-1 row-span-1 md:order-3 md:col-span-1 md:row-span-1"
+            class="bg-violet-500 p-6 md:p-8 rounded-xl order-5 col-span-1 row-span-1 md:order-3 md:col-span-1 md:row-span-1 flex items-center justify-center"
           >
-            <div class="flex justify-center items-center">
-              <i class="fa-brands fa-github text-white text-4xl"></i>
+            <div class="flex-col text-center">
+              <i
+                class="fa-solid fa-building-columns text-white text-3xl md:pb-2"
+              ></i>
+              <p class="text-white font-extralight">
+                Currently enrolling in Computer Science at the University of the
+                People
+              </p>
             </div>
           </div>
 
           <!-- Box 4 -->
           <div
-            class="link-container relative bg-white rounded-xl order-4 col-span-1 row-span-1 md:order-4 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden"
+            class="link-container relative bg-white rounded-xl order-4 col-span-1 row-span-1 md:order-4 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <img
               src="./img/work3.jpg"
               alt="my work 03 film finder"
               id="linkImage"
-              class="duration-500"
+              class="duration-500 dark:hidden"
+            />
+            <img
+              src="./img/work3-dark.jpg"
+              alt="my work 03 film finder"
+              id="linkImage"
+              class="duration-500 hidden dark:block"
             />
             <div
               class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
@@ -107,7 +133,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black text-xl lg:text-3xl hover:text-green-400 duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
                 ></i>
               </a>
             </div>
@@ -115,15 +141,18 @@
 
           <!-- Box 5 / Center -->
           <div
-            class="bg-white rounded-xl order-2 col-span-2 row-span-1 md:order-5 md:col-span-2 md:row-span-2 grid grid-cols-2 p-10"
+            class="bg-white rounded-xl order-2 col-span-2 row-span-1 md:order-5 md:col-span-2 md:row-span-2 grid grid-cols-2 p-10 dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <div
               class="ml-2 mb-4 md:-ml-4 md:mb-0 mt-auto w-3/4 md:w-fit max-w-2xs"
             >
               <img src="./img/my_memoji.png" alt="my memoji" class="" />
             </div>
-            <div class="text-sm lg:text-xl text-slate-800">
-              <span class="text-xl lg:text-3xl text-slate-800"
+            <div
+              class="text-sm lg:text-lg text-slate-800 dark:text-slate-50 dark:font-extralight"
+            >
+              <span
+                class="text-xl lg:text-3xl text-slate-800 dark:text-slate-50"
                 >Hi! I'm <b>Yui</b>,</span
               >
               a Fashion Designer turned Frontend Developer who cares about
@@ -133,13 +162,19 @@
 
           <!-- Box 6 -->
           <div
-            class="link-container relative bg-white rounded-xl order-6 col-span-1 row-span-1 md:order-6 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden"
+            class="link-container relative bg-white rounded-xl order-6 col-span-1 row-span-1 md:order-6 md:col-span-1 md:row-span-2 flex justify-center items-center overflow-hidden dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <img
               src="./img/work2.jpg"
               alt="my work 02 todo list"
               id="linkImage"
-              class="duration-500"
+              class="duration-500 dark:hidden"
+            />
+            <img
+              src="./img/work2-dark.jpg"
+              alt="my work 02 todo list"
+              id="linkImage"
+              class="duration-500 hidden dark:block"
             />
             <div
               class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
@@ -157,7 +192,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black text-lg lg:text-2xl hover:text-green-400 duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-lg lg:text-2xl duration-300"
                 ></i>
               </a>
               <a
@@ -166,7 +201,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black text-xl lg:text-3xl hover:text-green-400 duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
                 ></i>
               </a>
             </div>
@@ -174,13 +209,19 @@
 
           <!-- Box 7 -->
           <div
-            class="link-container relative bg-white rounded-xl order-6 col-span-1 row-span-1 md:col-span-1 md:order-7 md:row-span-2 flex justify-center items-center overflow-hidden"
+            class="link-container relative bg-white rounded-xl order-6 col-span-1 row-span-1 md:col-span-1 md:order-7 md:row-span-2 flex justify-center items-center overflow-hidden dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <img
               src="./img/work4.jpg"
               alt="my work 04 multi translator"
               id="linkImage"
-              class="duration-500"
+              class="duration-500 dark:hidden"
+            />
+            <img
+              src="./img/work4-dark.jpg"
+              alt="my work 04 multi translator"
+              id="linkImage"
+              class="duration-500 hidden dark:block"
             />
             <div
               class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
@@ -198,7 +239,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black text-lg lg:text-2xl hover:text-green-400 duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-lg lg:text-2xl duration-300"
                 ></i>
               </a>
               <a
@@ -207,7 +248,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black text-xl lg:text-3xl hover:text-green-400 duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
                 ></i>
               </a>
             </div>
@@ -234,18 +275,24 @@
 
           <!-- Box 9 / Mode-->
           <div
-            class="bg-white p-4 rounded-xl order-1 col-span-1 row-span-1 md:order-9 md:col-span-1 md:row-span-1 flex justify-center items-center"
+            class="bg-white p-4 rounded-xl order-1 col-span-1 row-span-1 md:order-9 md:col-span-1 md:row-span-1 flex justify-center items-center dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
-            <div class="flex cursor-pointer gap-2 bg-gray-200 p-1 rounded-3xl">
+            <div
+              class="flex cursor-pointer gap-2 bg-gray-200 p-1 rounded-3xl dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
+            >
               <div
-                class="dark-mode cursor-pointer bg-white w-8 h-8 rounded-3xl flex justify-center items-center"
+                class="dark-mode cursor-pointer bg-white w-8 h-8 rounded-3xl flex justify-center items-center duration-500"
               >
-                <i class="fa-solid fa-moon text-yellow-300 text-md"></i>
+                <i
+                  class="dark-icon fa-solid fa-moon text-yellow-300 text-md"
+                ></i>
               </div>
               <div
-                class="light-mode cursor-pointer bg-white w-8 h-8 rounded-3xl flex justify-center items-center"
+                class="light-mode cursor-pointer w-8 h-8 rounded-3xl flex justify-center items-center duration-500"
               >
-                <i class="fa-regular fa-sun text-red-300 text-md"></i>
+                <i
+                  class="light-icon fa-regular fa-sun text-red-300 text-md hidden"
+                ></i>
               </div>
             </div>
           </div>
