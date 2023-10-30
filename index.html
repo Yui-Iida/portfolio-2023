@@ -16,7 +16,9 @@
     <!-- <div
       class="h-full font-poppins font-light bg-gradient-to-r from-fuchsia-200 from-10% via-violet-200 via-30% to-blue-200 to-90%"
     > -->
-    <div class="h-full font-poppins font-light bg-gray-200 dark:bg-zinc-900">
+    <div
+      class="h-full min-h-screen font-poppins font-light bg-gray-200 dark:bg-zinc-900"
+    >
       <div class="py-6 px-12 md:py-12 md:px-20 lg:px-32">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
           <!-- Box 1 -->
@@ -35,22 +37,9 @@
               id="linkImage"
               class="duration-500 hidden dark:block"
             />
+
             <div
-              class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
-              id="linkTitle"
-            >
-              <p>Pikachu Chatbot</p>
-            </div>
-            <div
-              class="hidden absolute bg-white py-2 px-2 rounded-3xl"
-              id="linkIcons"
-            >
-              <i
-                class="fa-brands fa-react text-black text-xl sm:text-3xl lg:text-5xl"
-              ></i>
-            </div>
-            <div
-              class="hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 md:mb-6 flex items-center gap-2"
+              class="hidden absolute flex items-center gap-4 md:gap-0 bottom-24"
               id="links"
             >
               <a
@@ -59,7 +48,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white text-lg dark:hover:text-green-400 lg:text-2xl duration-300 hover:text-green-400 duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white text-2xl dark:hover:text-green-400 lg:text-2xl duration-300 hover:text-green-400 duration-300"
                 ></i>
               </a>
               <a
@@ -68,17 +57,48 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-3xl lg:text-3xl duration-300"
                 ></i>
               </a>
+            </div>
+
+            <div
+              class="hidden absolute bottom-0 mb-12 lg:mb-14 bg-white py-2 px-4 rounded-3xl text-xs md:text-sm"
+              id="linkTitle"
+            >
+              <p>Pikachu Chatbot</p>
+            </div>
+
+            <div class="hidden absolute bottom-0 mb-2" id="linkIcons">
+              <div class="flex flex-column gap-2">
+                <img
+                  src="./img/react-icon.svg"
+                  alt="React icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/chatgpt-icon.svg"
+                  alt="ChatGPT icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/tailwind-icon.svg"
+                  alt="Tailwind icon"
+                  class="bg-white p-1 rounded-3xl w-8"
+                />
+              </div>
             </div>
           </div>
 
           <!-- Box 2 -->
           <div
-            class="bg-yellow-300 p-4 rounded-xl order-5 col-span-1 row-span-1 md:order-2 md:col-span-1 md:row-span-1"
+            class="bg-yellow-300 p-4 rounded-xl order-5 col-span-1 row-span-1 md:order-2 md:col-span-1 md:row-span-1 flex items-center justify-center"
           >
-            Tech
+            <div class="md:flex gap-2">
+              <p class="text-4xl">🇬🇧</p>
+              <p class="text-4xl">🇩🇪</p>
+              <p class="text-4xl">🇯🇵</p>
+            </div>
           </div>
 
           <!-- Box 3 -->
@@ -86,10 +106,8 @@
             class="bg-violet-500 p-6 md:p-8 rounded-xl order-5 col-span-1 row-span-1 md:order-3 md:col-span-1 md:row-span-1 flex items-center justify-center"
           >
             <div class="flex-col text-center">
-              <i
-                class="fa-solid fa-building-columns text-white text-3xl md:pb-2"
-              ></i>
-              <p class="text-white font-extralight">
+              <i class="fa-solid fa-building-columns text-white md:pb-2"></i>
+              <p class="text-white font-extralight text-sm md:text-lg">
                 Currently enrolling in Computer Science at the University of the
                 People
               </p>
@@ -112,39 +130,56 @@
               id="linkImage"
               class="duration-500 hidden dark:block"
             />
+
             <div
-              class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
-              id="linkTitle"
-            >
-              <p>Film Finder</p>
-            </div>
-            <div
-              class="hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 md:mb-6 flex items-center gap-2"
+              class="hidden absolute flex items-center gap-4 md:gap-0 bottom-24"
               id="links"
             >
-              <!-- <a href="link" class="m-0 md:m-2">
-                <i
-                  class="fa-solid fa-external-link-alt text-black text-lg lg:text-2xl hover:text-green-400 duration-300"
-                ></i>
-              </a> -->
               <a
                 href="https://github.com/Yui-Iida/React-filmseries-finder"
                 class="m-0 md:m-2"
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-3xl lg:text-3xl duration-300"
                 ></i>
               </a>
+            </div>
+
+            <div
+              class="hidden absolute bottom-0 mb-12 lg:mb-14 bg-white py-2 px-4 rounded-3xl text-xs md:text-sm"
+              id="linkTitle"
+            >
+              <p>Film Finder</p>
+            </div>
+
+            <div class="hidden absolute bottom-0 mb-2" id="linkIcons">
+              <div class="flex flex-column gap-2">
+                <img
+                  src="./img/react-icon.svg"
+                  alt="React icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/materialui-icon.svg"
+                  alt="Material UI icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/css3-icon.svg"
+                  alt="CSS3 icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+              </div>
             </div>
           </div>
 
           <!-- Box 5 / Center -->
           <div
-            class="bg-white rounded-xl order-2 col-span-2 row-span-1 md:order-5 md:col-span-2 md:row-span-2 grid grid-cols-2 p-10 dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
+            class="bg-white rounded-xl order-2 col-span-2 row-span-1 md:order-5 md:col-span-2 md:row-span-2 grid grid-cols-2 p-6 md:p-10 dark:bg-zinc-900 dark:outline dark:outline-white dark:outline-thin"
           >
             <div
-              class="ml-2 mb-4 md:-ml-4 md:mb-0 mt-auto w-3/4 md:w-fit max-w-2xs"
+              class="ml-0 md:ml-2 md:-ml-4 mb-0 mt-auto w-3/4 md:w-fit max-w-2xs"
             >
               <img src="./img/my_memoji.png" alt="my memoji" class="" />
             </div>
@@ -155,8 +190,8 @@
                 class="text-xl lg:text-3xl text-slate-800 dark:text-slate-50"
                 >Hi! I'm <b>Yui</b>,</span
               >
-              a Fashion Designer turned Frontend Developer who cares about
-              UI/UX. I'm from Japan and love music and cats.
+              a Fashion Designer turned Web Developer who cares about UI/UX. I'm
+              from Japan and love music and cats.
             </div>
           </div>
 
@@ -176,14 +211,9 @@
               id="linkImage"
               class="duration-500 hidden dark:block"
             />
+
             <div
-              class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
-              id="linkTitle"
-            >
-              <p>Todo List</p>
-            </div>
-            <div
-              class="hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 md:mb-6 flex items-center gap-2"
+              class="hidden absolute flex items-center gap-4 md:gap-0 bottom-24"
               id="links"
             >
               <a
@@ -192,7 +222,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-lg lg:text-2xl duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-2xl lg:text-2xl duration-300"
                 ></i>
               </a>
               <a
@@ -201,9 +231,36 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-3xl lg:text-3xl duration-300"
                 ></i>
               </a>
+            </div>
+
+            <div
+              class="hidden absolute bottom-0 mb-12 lg:mb-14 bg-white py-2 px-4 rounded-3xl text-xs md:text-sm"
+              id="linkTitle"
+            >
+              <p>Todo List</p>
+            </div>
+
+            <div class="hidden absolute bottom-0 mb-2" id="linkIcons">
+              <div class="flex flex-column gap-2">
+                <img
+                  src="./img/react-icon.svg"
+                  alt="React icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/chakraui-icon.svg"
+                  alt="Chakra UI icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/css3-icon.svg"
+                  alt="CSS3 icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+              </div>
             </div>
           </div>
 
@@ -223,14 +280,9 @@
               id="linkImage"
               class="duration-500 hidden dark:block"
             />
+
             <div
-              class="hidden absolute bottom-0 mb-10 md:mb-16 lg:mb-20 lg:mb-20 bg-white py-2 px-4 rounded-3xl text-sm"
-              id="linkTitle"
-            >
-              <p>Multi Translator</p>
-            </div>
-            <div
-              class="hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 md:mb-6 flex items-center gap-2"
+              class="hidden absolute flex items-center gap-4 md:gap-0 bottom-24"
               id="links"
             >
               <a
@@ -239,7 +291,7 @@
                 target="_blank"
               >
                 <i
-                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-lg lg:text-2xl duration-300"
+                  class="fa-solid fa-external-link-alt text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-2xl lg:text-2xl duration-300"
                 ></i>
               </a>
               <a
@@ -248,9 +300,39 @@
                 target="_blank"
               >
                 <i
-                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-xl lg:text-3xl duration-300"
+                  class="fa-brands fa-github text-black hover:text-green-400 dark:text-white dark:hover:text-green-400 text-3xl lg:text-3xl duration-300"
                 ></i>
               </a>
+            </div>
+
+            <div
+              class="hidden absolute bottom-0 mb-12 lg:mb-14 bg-white py-2 px-4 rounded-3xl text-xs md:text-sm"
+              id="linkTitle"
+            >
+              <p>Multi Translator</p>
+            </div>
+
+            <div class="hidden absolute bottom-0 mb-2" id="linkIcons">
+              <div class="flex flex-column gap-2">
+                <img
+                  src="./img/javascript-icon.svg"
+                  alt="JavaScript icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <img
+                  src="./img/tailwind-icon.svg"
+                  alt="Tailwind icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+                <!-- <i
+                  class="fa-brands fa-css3-alt bg-white px-2 py-1 rounded-3xl text-black text-xl sm:text-3xl lg:text-5xl"
+                ></i> -->
+                <img
+                  src="./img/css3-icon.svg"
+                  alt="CSS3 icon"
+                  class="bg-white p-2 rounded-3xl w-8"
+                />
+              </div>
             </div>
           </div>
 
@@ -260,15 +342,17 @@
           >
             <div class="links flex gap-3 md:gap-6">
               <a href="https://twitter.com/muller_dev" target="_blank">
-                <i class="fa-brands fa-x-twitter fa-xl text-white"></i>
+                <i
+                  class="fa-brands fa-x-twitter fa-lg md:fa-2xl text-white"
+                ></i>
               </a>
 
               <a href="https://www.linkedin.com/in/yui-iida/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-xl text-white"></i>
+                <i class="fa-brands fa-linkedin fa-lg md:fa-2xl text-white"></i>
               </a>
 
               <a href="https://github.com/Yui-Iida" target="_blank">
-                <i class="fa-brands fa-github fa-xl text-white"></i>
+                <i class="fa-brands fa-github fa-lg md:fa-2xl text-white"></i>
               </a>
             </div>
           </div>
@@ -299,10 +383,10 @@
 
           <!-- Box 10 -->
           <div
-            class="bg-violet-500 p-4 rounded-xl order-3 col-span-2 row-span-1 md:order-10 md:col-span-4 md:row-span-1"
+            class="bg-violet-500 p-2 md:p-4 rounded-xl order-3 col-span-2 row-span-1 md:order-10 md:col-span-4 md:row-span-1"
           >
             <div
-              class="logos flex justify-between items-center py-2 px-4 md:px-20"
+              class="logos grid grid-cols-6 md:flex justify-between items-center py-2 px-4 md:px-20"
             >
               <i
                 class="fa-brands fa-js text-white text-xl sm:text-3xl lg:text-5xl"
@@ -322,6 +406,28 @@
               <i
                 class="fa-brands fa-python text-white text-xl sm:text-3xl lg:text-5xl"
               ></i>
+              <svg
+                fill="#fff"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                stroke="#fff"
+                class="w-5 md:w-9 md:-mx-2"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"
+                  ></path>
+                </g>
+              </svg>
               <i
                 class="fa-brands fa-bootstrap text-white text-xl sm:text-3xl lg:text-5xl"
               ></i>
